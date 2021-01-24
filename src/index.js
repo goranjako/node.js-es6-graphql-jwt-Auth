@@ -38,7 +38,7 @@ const corsOption = {
     credentials: true,
     exposedHeaders: ['token']
   };
-  
+  app.use.cors(corsOption);
   app.use(morgan('dev'));
 // Construct a schema, using GraphQL schema language
 
