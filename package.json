@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/goranjako/node.js-es6-graphql-jwt-Auth/issues"
   },
-  "homepage": "https://github.com/goranjako/node.js-es6-graphql-jwt-Auth#readme"
+  "homepage": "https://github.com/goranjako/node.js-es6-graphql-jwt-Auth#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.2",
+    "apollo-server-express": "^2.19.2",
+    "graphql": "^15.4.0"
+  }
 }
