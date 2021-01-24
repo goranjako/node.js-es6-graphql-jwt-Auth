@@ -9,7 +9,7 @@ type Todo {
   complete:Boolean!
 }
  extend type Query {
-    todoss:[Todo!]
+    todos:[Todo!]
     todoId(userId:String):[Todos!]!
   
   }

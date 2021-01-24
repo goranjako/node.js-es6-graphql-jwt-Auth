@@ -1,18 +1,16 @@
 import express from'express';
+import cors from'cors';
 import { ApolloServer, gql } from 'apollo-server-express';
 import User from './models/user';
 import Todo from './models/todo';
-const app = express();
-
-import cors from 'cors';
 import morgan from 'morgan';
 import  typeDefs  from './grapql/shemas';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import  resolvers  from './grapql/resolvers';
-
 dotenv.config();
+const app = express();
 //mongoose setup
 let mongodbURI;
 if (process.env.NODE_ENV === 'test') {
@@ -32,13 +30,14 @@ mongoose.connect(mongodbURI)
   app.use(bodyParser.json());
 
 // enable cors
+app.use(cors(corsOption));
 const corsOption = {
     origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     exposedHeaders: ['token']
   };
-  app.use.cors(corsOption);
+ 
   app.use(morgan('dev'));
 // Construct a schema, using GraphQL schema language
 

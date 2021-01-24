@@ -1,6 +1,6 @@
 import { FilterRootFields, FilterToSchema } from "apollo-server";
 
-import {todo} from '../../config/verify.js';
+import {user} from '../../config/verify.js';
 import todo from "../shemas/todo";
 
 export default  {
@@ -16,7 +16,7 @@ export default  {
     Mutation: {
     
       addTodo: async (paren,{input},{Todo}) => {
-        await todo.validate(input, {abortEarly: false});
+        await user.validate(input, {abortEarly: false});
         let todos = new Todo({
             userId:input.userId,
             item:input.item,

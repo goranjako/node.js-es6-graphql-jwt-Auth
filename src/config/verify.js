@@ -45,7 +45,7 @@ export const signIn = yup.object().shape({
   password
 });
 
-export const todo = yup.object().shape({
+export const user = yup.object().shape({
    userId,
    item
 });
