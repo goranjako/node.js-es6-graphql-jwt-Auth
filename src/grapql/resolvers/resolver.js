@@ -2,10 +2,7 @@ import { UserInputError } from 'apollo-server-express'
 import bcrypt from 'bcrypt-nodejs';
 import authHeader from '../../config/auth';
 import jwt from 'jsonwebtoken';
-import {
-  signUp,signIn
-
-} from '../../config/verify.js';
+import {signUp,signIn} from '../../config/verify.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
