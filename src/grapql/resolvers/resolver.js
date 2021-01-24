@@ -73,41 +73,4 @@ export default {
 
 
 }
-      /*
-      updateUser: (parent, args) => {
-        if (!args.id) return;
-          return User.findOneAndUpdate(
-           {
-             _id: args.id
-           },
-           {
-             $set: {
-                fullName: args.fullName,
-                email: args.email
-             }
-           }, {new: true}, (err, User) => {
-             if (err) {
-               console.log('Something went wrong when updating the User');
-             } else {
-             }
-           }
-        );
-      }
-    }
-  }
-   signUp: async (root, args, { req }, context, info) => {
-      await Joi.validate(args, signUp, { abortEarly: false })
-      const createdUser = await db.Users.create(args)
-      req.session.userId = createdUser.id
-      return createdUser
-
-    const emailExpression = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        
-        const isValidEmail =  emailExpression.test(String(email).toLowerCase())
-        if(!isValidEmail)
-        throw new Error("email not in proper format")
-  
-        if(fullName.length > 15)
-        throw new Error("firstName should be less than 15 characters")
-  
-  */
+   
