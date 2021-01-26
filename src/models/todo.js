@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const user = require('./user');
+//const user = require('./user');
 const Schema = mongoose.Schema;
 
 const TodoSchema = new Schema({

@@ -1,7 +1,7 @@
 import { FilterRootFields, FilterToSchema } from "apollo-server";
 
-import {user} from '../../config/verify.js';
-import todo from "../shemas/todo";
+import {user} from '../../config/verify';
+
 
 export default  {
     Query: {

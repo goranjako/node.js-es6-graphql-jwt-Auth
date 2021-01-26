@@ -13,9 +13,7 @@ var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/
 
 var _apolloServer = require("apollo-server");
 
-var _verify = require("../../config/verify.js");
-
-var _todo = _interopRequireDefault(require("../shemas/todo"));
+var _verify = require("../../config/verify");
 
 var _default = {
   Query: {

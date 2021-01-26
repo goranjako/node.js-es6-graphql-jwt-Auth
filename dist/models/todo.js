@@ -4,8 +4,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
-var user = require('./user');
-
+//const user = require('./user');
 var Schema = _mongoose["default"].Schema;
 var TodoSchema = new Schema({
   userId: {
